@@ -1,0 +1,12 @@
+I have installed Office onto 100+ machines. Is there a way to accept the "First Things First" 
+(http://imgur.com/a/QqPob) message that appears when an office application is first opened, 
+without having to go to each machine, open an office program and accepting it? Is it possible 
+to accept it automatically through the registry or by a group policy? I have be looking for
+answers to this for some time now but I am getting no where.
+I have tried adding all the below recommended keys to the registry but none seem to help:
+
+[HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\General] "shownfirstrunoptin"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\FirstRun] "BootedRTM"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Registration] "AcceptAllEulas"=dword:00000001
